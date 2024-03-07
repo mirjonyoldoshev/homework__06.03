@@ -1,0 +1,167 @@
+.menu {
+  padding: 80px 0;
+
+  &__title {
+    padding-bottom: 60px;
+    text-align: center;
+    color: $primaryCl;
+
+    span {
+      color: orange;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: calc(40% - 25px);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__right {
+    width: calc(60% - 25px);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+  }
+
+  &__collaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__collaction__img {
+    width: 160px;
+    height: 162px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__collaction__infos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    color: $primaryCl;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .menu {
+    &__right {
+      width: calc(50% - 25px);
+      gap: 20px;
+    }
+
+    &__collaction__img {
+      width: 140px;
+      height: 140px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__left {
+      width: calc(50% - 25px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__collaction__infos {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    &__cards {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    &__right {
+      width: 90%;
+    }
+
+    &__left {
+      width: 90%;
+    }
+
+    &__collaction__infos {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 24px;
+      color: $primaryCl;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    padding: 30px 0;
+
+    &__title {
+      padding-bottom: 40px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__collaction__infos {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .menu {
+    &__collaction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .menu {
+    &__collaction__infos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__right {
+      width: 100%;
+    }
+
+    &__left {
+      width: 100%;
+    }
+  }
+}

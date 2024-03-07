@@ -1,0 +1,46 @@
+.reservation {
+  padding: 100px 0;
+  background: url(../images/reservation/reservation-bg.png) no-repeat;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 601px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 400;
+    color: #d67e34;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__btn {
+    @include button(true);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reservation {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

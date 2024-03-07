@@ -1,0 +1,20 @@
+$primary-color: #ff7400;
+
+@mixin button($btn: true) {
+  @if ($btn) {
+    background-color: $primary-color;
+    padding: 14px 19px;
+  } @else {
+    background-color: #d67e34;
+    padding: 14px 68px;
+  }
+
+  font-size: 14px;
+  color: #fff;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: #fff;
+    color: $primary-color;
+  }
+}
